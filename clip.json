@@ -1,0 +1,27 @@
+# config-file-type: JSON 1
+{
+   "global" : {
+      "toppath" : "/data/storage/video",
+      "length"  : 60,
+    },
+   "cameras" : {
+      "ipc-1" : {
+	         "url"	      : "rtsp://user:pass@camera1/play1.sdp",
+           "enabled"    : 1,
+           "vendor"     : "trendnet",
+           "model"      : "tv_ip662"
+                },
+      "ipc-2" : {
+          "url"       : "rtsp://user:pass@camera2:88/videoMain",
+           "enabled"    : 0,
+           "vendor"     : "foscam",
+           "model"      : "FI9828P"
+                },
+      "ipc-3" : {
+	         "url"	      : "rtsp://user:pass@camera3:554//Streaming/Channels/101?transportmode=unicast",
+           "enabled"    : 0,
+           "vendor"     : "HIKvision",
+           "model"      : ""
+	        }
+   }
+}
